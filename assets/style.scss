@@ -28,15 +28,19 @@ body {
   font-weight: 400;
   font-size: 18px;
   height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+opacity: 0.95;
+background-blend-mode: multiply;
+//background-repeat: no-repeat;
 }
 
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 5px 3%;
+  padding: 5px 5%;
   width: 100%;
     background-color: #fdf3e6;
-    border: ridge;
+    //border: ridge;
 border-top-color: #a2a09e;
 border-top-width: medium;
 border-right-color: #c8c2bb;
@@ -354,6 +358,7 @@ nav {
     float: none;
     margin-top: 9px;
     font-family: $helveticaNeue;
+    font-size: 16px;
     font-weight: 300;
     display: block;
   }
