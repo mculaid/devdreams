@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Search
+title: Archive
 permalink: /search/
 ---
 
@@ -19,3 +19,7 @@ permalink: /search/
     json: '{{ site.baseurl }}/search.json'
     });
 </script>
+
+##Archive:
+
+Work in progress.
