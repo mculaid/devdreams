@@ -40,14 +40,14 @@ background-blend-mode: multiply; //image multiply
 .container {
   margin: 0 auto;
   max-width: 740px;
-  min-height: 140px;
+  min-height: 89px;
   //padding: 5px 5%;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   //width: 100%;
-    background-color: #fdf3e6;
+    background-color: #f7e2c8 //#fdf3e6;
     //border: ridge;
 border-top-color: #a2a09e;
 border-top-width: medium;
@@ -291,7 +291,7 @@ p > img {
 .wrapper-masthead {
   margin-bottom: 25px;
   position: relative;
-  max-width: 740px; 
+  //max-width: 740px; 
   //max-height: 140px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -299,7 +299,10 @@ p > img {
 
 .masthead {
   padding: 4% 0; // here
-  border-bottom: 10px double #eee;
+  border-bottom: 1px double #906c64;
+border-left: 1px double #906c64;
+border-right: 1px double #906c64;
+border-top: 1px double #906c64;
 
   @include mobile {
     text-align: center;
@@ -362,18 +365,17 @@ p > img {
 nav {
     float: right;
     margin-top: 4%; // @TODO: Vertically middle align
-    //font-family: $helveticaNeue;
-    text-decoration: underline;
+    font-family: $helveticaNeue; // font-family: "Open Sans", sans-serif;
     color: #925250;
     font-size: 18px;
-    font-weight: 600;
+
 
   @include mobile {
     float: none;
     margin-top: 9px;
-    //font-family: $helveticaNeue;
+    font-family: $helveticaNeue;
     font-size: 16px;
-    font-weight: 600;
+
     display: block;
   }
 
@@ -384,6 +386,7 @@ nav {
     font-weight: 300;
     letter-spacing: 2px;
     text-decoration: underline;
+    margin-right: 29px; //for border
 
     @include mobile {
       margin: 0 10px;
@@ -441,24 +444,30 @@ nav {
 .wrapper-container {
   min-height: 100%;
   position: relative;
-  background-color: #eeeeee73; // transparency
+  background-color: #e6ad701f; // #eeeeee73; // transparency magic effect
 }
 
 .wrapper-main {
-  padding-bottom: 125px;
-  padding-top: 0;
+  //padding-bottom: 125px;
+  //padding-top: 0;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background-color: #fdf3e675; // original: #fdf3e6; // stretch background boxes in menu // 
+    border-radius: 10px;
 }
 
 .wrapper-footer {
-    position: absolute; //relative, absolute
-    bottom: 1px; // sticks it from the bottom upwards
+    position: absolute; //relative, absolute - remove sticking it under last post.
+                        //alternatively remove min-width and set fixed position!
+    bottom: 1px; // sticks it from the bottom upwards. without margin it sticks seemlessy
     //width: 100%
     min-width: 100%; //! needed
     // height: 89px;
     //background-color: #eee0; // transparent
-    //background-color: #fdf3e6;
+    //background-color: #fdf3e6; add for stretching across screen
     border-radius: 10px;
-    margin: 10px auto; //0 auto
+    // margin: 10px auto; //0 auto or deactivate in order to stick at bottom completely
 
 }
 
