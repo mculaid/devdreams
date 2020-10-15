@@ -270,7 +270,7 @@ p > img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $rgb(131, 59, 21);
 
   @include mobile {
     text-align: center;
@@ -330,10 +330,11 @@ p > img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+    position: fixed;
+    float: right;
+    margin-top: 23px; // @TODO: Vertically middle align
+    font-family: $helveticaNeue;
+    font-size: 18px;
 
   @include mobile {
     float: none;
@@ -362,7 +363,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $rgb(131, 59, 21);
 }
 
 .posts > .post:last-child {
@@ -398,6 +399,8 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    border: 1px solid $rgb(131, 59, 21);
+    border-radius: 4px;
   }
 }
 
