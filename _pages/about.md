@@ -6,8 +6,7 @@ permalink: /about/
 
 #This personal webpage is a fork.
 
-Please check out the the author:  ttps://github.com/amitmerchant1990/reverie
-I think the tools provided and the QoL setup are amazing.
+Please check out the the author:  [link to Google!](https://github.com/amitmerchant1990/reverie)
 
 Thank you for providing the tools neccessary to get me setup and running easily.
 
