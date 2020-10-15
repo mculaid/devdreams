@@ -29,20 +29,24 @@ body {
   font-size: 18px;
   height: 100%;
   background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center; //image center
 opacity: 0.95;
-background-blend-mode: multiply;
+background-blend-mode: multiply; //image multiply
+    background-size: 150%; //image stretch
+    
 //background-repeat: no-repeat;
 }
 
 .container {
   margin: 0 auto;
   max-width: 740px;
+  min-height: 140px;
   //padding: 5px 5%;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 100%;
+  //width: 100%;
     background-color: #fdf3e6;
     //border: ridge;
 border-top-color: #a2a09e;
@@ -54,7 +58,6 @@ border-bottom-width: medium;
 border-left-color: #a2a09e;
 border-left-width: medium;
     text-align: justify;
-
     border-radius: 10px;
 }
 
@@ -288,13 +291,14 @@ p > img {
 .wrapper-masthead {
   margin-bottom: 25px;
   position: relative;
-  max-width: 740px;
+  max-width: 740px; 
+  //max-height: 140px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
 .masthead {
-  padding: 4% 0;
+  padding: 4% 0; // here
   border-bottom: 10px double #eee;
 
   @include mobile {
@@ -362,14 +366,14 @@ nav {
     text-decoration: underline;
     color: #925250;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     //font-family: $helveticaNeue;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 600;
     display: block;
   }
 
@@ -446,12 +450,15 @@ nav {
 }
 
 .wrapper-footer {
-    position: absolute;
-    bottom: 25px;
-    width: 100%;
-    height: 89px;
-    background-color: #eee0; // transparent
-    margin: 0 auto;
+    position: absolute; //relative, absolute
+    bottom: 1px; // sticks it from the bottom upwards
+    //width: 100%
+    min-width: 100% //! needed
+    // height: 89px;
+    //background-color: #eee0; // transparent
+    //background-color: #fdf3e6;
+    border-radius: 10px;
+    margin: 10px auto; //0 auto
 
 }
 
@@ -471,7 +478,7 @@ body:after {
 }
 
 #bar {
-    background: #000;
+    //background: #000;
     height: 7px;
     background-size: cover;
     background-position: left 60%;
