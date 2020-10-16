@@ -24,9 +24,9 @@ body {
   background: rgba(162, 97, 13, 0.48);
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #404040;
-  line-height: 1.5;
+  line-height: 1.77;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 18px; //broken
   height: 100%;
   background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   background-position: center; //image center
@@ -39,13 +39,13 @@ background-blend-mode: multiply; //image multiply
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  min-height: 89px;
+  max-width: 900px; //ex 740px
+  //min-height: 89px;
   //padding: 5px 5%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  //padding-top: 5px;
+  //padding-bottom: 5px;
   //width: 100%;
   background-color: #f7e2c8; //#fdf3e6; hide this container
     //border: ridge;
@@ -58,6 +58,7 @@ border-bottom-width: medium;
 border-left-color: #a2a09e;
 border-left-width: medium;
     text-align: justify;
+    font-size: 18px; // careful
     border-radius: 10px;
 }
 
@@ -289,24 +290,25 @@ p > img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 25px;
-  position: relative;
+ // margin-bottom: 25px;
+  //position: relative;
   //max-width: 740px; 
   //max-height: 140px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
     background-color: #dfd1c8; //for fullscreen stretch otherwise rmeove. also cool #f7e2c8
-    max-width: 1080px;
+    max-width: 900px;
     border-radius: 10px;
+    height: 11px;
 }
 
 .masthead {
-  padding: 4% 0; // here
+ // padding: 4% 0; // here
   border-bottom: 1px double #906c64;
 border-left: 1px double #906c64;
 border-right: 1px double #906c64;
 border-top: 1px double #906c64;
-    border-radius: 10px;
+    border-radius: 30px; // gief space above nav bar menui
 
   @include mobile {
     text-align: center;
@@ -369,7 +371,7 @@ border-top: 1px double #906c64;
 nav {
     float: right;
     margin-top: 4%; // @TODO: Vertically middle align
-    font-family: $helveticaNeue; // font-family: "Open Sans", sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; // font-family: "Open Sans", sans-serif;
     color: #925250;
     font-size: 18px;
 
@@ -448,18 +450,26 @@ nav {
 .wrapper-container {
   min-height: 100%;
   position: relative;
-  background-color: #e6ad701f; // #eeeeee73; // transparency magic effect
+  background-color: #d8c8bf;
+max-width: 1080px;
+border-radius: 10px;
+margin: 0 auto;
+    //background-color: #e6ad701f; // #eeeeee73; // transparency magic effect
 }
 
 .wrapper-main {
   //padding-bottom: 125px;
   //padding-top: 0;
     margin: 0 auto;
-    padding: 0;
     border: 0;
-    background-color: #dfd1c8; // original: #fdf3e6; // stretch background boxes in menu // 
-    max-width: 1080px;
+    background-color: #f9e3cc;
+    //background-color: #dfd1c8; // original: #fdf3e6; // stretch background boxes in menu // 
+    max-width: 1060px;
     border-radius: 10px;
+    padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 10px;
     //background-color: #f7e2c8; //#fdf3e6;
 }
 
