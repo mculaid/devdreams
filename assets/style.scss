@@ -295,9 +295,9 @@ p > img {
   //max-width: 740px; 
   //max-height: 140px;
   margin: 0 auto;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
     background-color: #dfd1c8; //for fullscreen stretch otherwise rmeove. also cool #f7e2c8
-    max-width: 900px;
+    max-width: 1060px;
     border-radius: 10px;
     height: 11px;
 }
@@ -306,9 +306,9 @@ p > img {
  // padding: 4% 0; // here
   border-bottom: 1px double #906c64;
 border-left: 1px double #906c64;
-border-right: 1px double #906c64;
+order-right: 1px double #906c64;
 border-top: 1px double #906c64;
-    border-radius: 30px; // gief space above nav bar menui
+    border-radius: 10px; // gief space above nav bar menui
 
   @include mobile {
     text-align: center;
@@ -373,7 +373,7 @@ nav {
     margin-top: 4%; // @TODO: Vertically middle align
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; // font-family: "Open Sans", sans-serif;
     color: #925250;
-    font-size: 18px;
+
 
 
   @include mobile {
@@ -450,10 +450,12 @@ nav {
 .wrapper-container {
   min-height: 100%;
   position: relative;
-  background-color: #d8c8bf;
+  //background-color: #d8c8bf; //FOR SILVER FRAME!!! CARE!
 max-width: 1080px;
 border-radius: 10px;
 margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 45px;
     //background-color: #e6ad701f; // #eeeeee73; // transparency magic effect
 }
 
@@ -474,17 +476,25 @@ padding-bottom: 10px;
 }
 
 .wrapper-footer {
-    position: absolute; //relative, absolute - remove sticking it under last post.
+    //position: absolute; //relative, absolute - remove sticking it under last post.
                         //alternatively remove min-width and set fixed position!
-    bottom: 1px; // sticks it from the bottom upwards. without margin it sticks seemlessy
+    //bottom: 1px; // sticks it from the bottom upwards. without margin it sticks seemlessy
     //width: 100%
-    min-width: 100%; //! needed
+    //min-width: 100%; //! needed
     // height: 89px;
     // thiiiiiiiiiiiiis! background-color: #dfd1c8 // transparent
     //background-color: #fdf3e6; add for stretching across screen
     //same as middle
-    border-radius: 10px;
+    //border-radius: 10px;
     // margin: 10px auto; //0 auto or deactivate in order to stick at bottom completely
+    position: fixed;
+bottom: 1px;
+min-width: 10px;
+border-radius: 10px;
+//left: 100px;
+padding-right: 300px;
+width: 30px;
+left: 1px;
 }
 
 footer {
