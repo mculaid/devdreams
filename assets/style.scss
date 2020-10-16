@@ -47,7 +47,7 @@ background-blend-mode: multiply; //image multiply
   padding-top: 5px;
   padding-bottom: 5px;
   //width: 100%;
-  background-color: #f7e2c8; //#fdf3e6;
+  background-color: #f7e2c8; //#fdf3e6; hide this container
     //border: ridge;
 border-top-color: #a2a09e;
 border-top-width: medium;
@@ -295,6 +295,9 @@ p > img {
   //max-height: 140px;
   margin: 0 auto;
   margin-bottom: 10px;
+    background-color: #dfd1c8; //for fullscreen stretch otherwise rmeove. also cool #f7e2c8
+    max-width: 1080px;
+    border-radius: 10px;
 }
 
 .masthead {
@@ -303,6 +306,7 @@ p > img {
 border-left: 1px double #906c64;
 border-right: 1px double #906c64;
 border-top: 1px double #906c64;
+    border-radius: 10px;
 
   @include mobile {
     text-align: center;
@@ -380,7 +384,7 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 22px;
     color: #925250;
     text-align: right;
     font-weight: 300;
@@ -453,8 +457,10 @@ nav {
     margin: 0 auto;
     padding: 0;
     border: 0;
-    background-color: #fdf3e675; // original: #fdf3e6; // stretch background boxes in menu // 
+    background-color: #dfd1c8; // original: #fdf3e6; // stretch background boxes in menu // 
+    max-width: 1080px;
     border-radius: 10px;
+    //background-color: #f7e2c8; //#fdf3e6;
 }
 
 .wrapper-footer {
@@ -464,11 +470,11 @@ nav {
     //width: 100%
     min-width: 100%; //! needed
     // height: 89px;
-    //background-color: #eee0; // transparent
+    // thiiiiiiiiiiiiis! background-color: #dfd1c8 // transparent
     //background-color: #fdf3e6; add for stretching across screen
+    //same as middle
     border-radius: 10px;
     // margin: 10px auto; //0 auto or deactivate in order to stick at bottom completely
-
 }
 
 footer {
