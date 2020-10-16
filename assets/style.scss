@@ -296,17 +296,17 @@ p > img {
   //max-height: 140px;
   margin: 0 auto;
   margin-bottom: 5px;
-    background-color: #dfd1c8; //for fullscreen stretch otherwise rmeove. also cool #f7e2c8
+    //background-color: #dfd1c8; //for fullscreen stretch otherwise rmeove. also cool #f7e2c8
     max-width: 1060px;
     border-radius: 10px;
-    height: 11px;
+    //height: 11px; remove for sticking nav menu to text below
 }
 
 .masthead {
  // padding: 4% 0; // here
   border-bottom: 1px double #906c64;
 border-left: 1px double #906c64;
-order-right: 1px double #906c64;
+border-right: 1px double #906c64;
 border-top: 1px double #906c64;
     border-radius: 10px; // gief space above nav bar menui
 
