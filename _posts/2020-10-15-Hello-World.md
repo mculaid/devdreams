@@ -1,10 +1,9 @@
-
-
+---
+title: Hello, world.
 layout: post
-title: hello, world.
+---
 
-
-![Test](/posts/images/post1.jpg)
+![Test](../images/posts/post1.jpg)
 
 ***
 ```python
