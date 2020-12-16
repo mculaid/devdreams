@@ -40,3 +40,4 @@ The Blog. It's here to allow me to make notes of where I am going and how I'm ac
 And I'm done writing, pushing this one so I can get back to my studies!
 
 
+![Test](../images/posts/post1.jpg)
