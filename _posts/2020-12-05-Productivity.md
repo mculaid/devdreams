@@ -28,7 +28,7 @@ I have booted up my Ubuntu VM. The goal is to familiarize myself with node.js (p
 
 This appears to work fine with my wordlist:
 
-(../images/posts/includes/50.png)
+![Test](../images/posts/includes/50.png)
 
 I have also had an idea on how to write a j.son file script slash database creator. It's pretty basic but the general idea is:
 0) If we are appending  to an existing .json file, make a backup before proceeding to manipulate it.
@@ -39,11 +39,11 @@ repeat until count reached or if input is "0"
 print to file the neccessary formatting.
 Here is what I have come up with so far:
 
-(../images/posts/includes/51.png)
+![Test](../images/posts/includes/51.png)
 
 and the second iteration of json_maker:
 
-(../images/posts/includes/52.png)
+![Test](../images/posts/includes/52.png)
 
 As for the size of the database I am considering asking the user if he knows the specific size of it beforehand but because that is unrealistic I think it is better to learn about insertion first. There is another good reason to learn insertion, namely when it comes to adding data. I think it would be best if there were a hash table of 26 buckets, possibly more, and add new users via insertion to a specific point in order to keep the list sorted alphabetically. I think it's best if I take a look on how to add a next-pointer to each users in order to keep up the alphabetical list for easier reading of the json database.
 Possible entries for each object off the top of my head:

@@ -11,7 +11,7 @@ printf("My developer diary.\n");
 ```
 ***
 
-(../images/posts/includes/60.png)
+![Test](../images/posts/includes/60.png)
 
 Figuring out a solution to search my database. While the output does provide me with the dataset I'm searching for, it also is inefficient. For example, what if I want partial matches? What if I type in Alex. I don't want to just find Alex but also Alexandra, Alexis and every other abbreviation of the name. It appears to me that I'm circling around the same problem over and over again: Match two or more strings partially. No matter what approach I take with json files and it is the same for each and every script I've written so far, I always hit the same wall. This might be a root problem I will have to figure out first.
 

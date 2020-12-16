@@ -26,9 +26,9 @@ In order to narrow down the factors I will go the manual route. Go through each 
 Here's what I've learned so far:
 How a json is formatted and how to parse it in Python via the json library.
 
-(../images/posts/includes/4.png)
-(../images/posts/includes/42.png)
+![Test](../images/posts/includes/4.png)
+![Test](../images/posts/includes/42.png)
 
 Playing around some more I realize that it isn't as straight-forward to actually search the values for some reason at least if I search this structure for "Name" I get as an output "Name" that's literally all I can come up with :D I could obviously iterate over the whole file but I do not see myself comparing strings like I did with the webpage. HERE, the data is sorted and clear, I should be able to find another way. f.open() also works fine with .json. I'm heading to JupyterNotebook to see what I can do with the Json I have now:
 
-(../images/posts/includes/43.png)
+![Test](../images/posts/includes/43.png)
