@@ -1,5 +1,5 @@
 ---
-title: Optimization!
+title: Optimizations!
 layout: post
 ---
 
