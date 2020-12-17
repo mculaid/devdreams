@@ -3,7 +3,7 @@ title: Early Bird!
 layout: post
 ---
 
-![Test](../images/posts/post2.jpg)
+
 
 ***
 ```python
